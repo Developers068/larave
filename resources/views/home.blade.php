@@ -1,5 +1,10 @@
-@extends('layout.app')
-
-@section('contents')
-<h1>chacha</h1>
-@endsection
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>DEVELOPERS</title>
+</head>
+<body>
+	
+</body>
+</html>
