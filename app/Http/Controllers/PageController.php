@@ -21,6 +21,13 @@ class PageController extends Controller
         return view('services');
     }
 
+    public function blog()
+    {
+     return view('blog');
+    }
+
+
+
     /**
      * Show the form for creating a new resource.
      *
