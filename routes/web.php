@@ -16,6 +16,10 @@ use App\Http\Controllers\PageController;
 
 Route::get ('/', [PageController::class,'index'])->name('home');
 Route::get ('/contactus', [PageController::class,'contactus'])->name('contactus');
+Route::get ('/', [PageController::class,'index'])->name('dash');
+Route::get ('/services', [PageController::class, 'sjut'])->name('services');
+Route::get ('/blog', [PageController::class, 'blog'])->name('blog');
+
 
 Route::get('/About', function () {
     return view('about');
@@ -23,5 +27,6 @@ Route::get('/About', function () {
 
 Route::get('/Employees', function () {
     return view('employees');
-})->name('happy');
+})->name('employees');
 
+Route::get ('/location', [PageController::class, 'location'])->name('location');

@@ -16,10 +16,29 @@ class PageController extends Controller
         return view('home');
     }
 
+
     public function contactus()
     {
         return view('contactus');
     }
+
+     public function sjut()
+    {
+        return view('services');
+    }
+
+    public function blog()
+    {
+     return view('blog');
+    }
+
+    public function location()
+        {
+            return view('location');
+        }
+
+
+
     /**
      * Show the form for creating a new resource.
      *
