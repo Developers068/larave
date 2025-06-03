@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/Home', function () {
-    return view('home');
-})->name('home');
+Route::get ('/', [PageController::class,'index'])->name('dash');
+Route::get ('/services', [PageController::class, 'sjut'])->name('services');
+Route::get ('/blog', [PageController::class, 'blog'])->name('blog');
 
 
 Route::get('/About', function () {
@@ -24,7 +25,7 @@ Route::get('/About', function () {
 
 Route::get('/Employees', function () {
     return view('employees');
-})->name('happy');
+})->name('employees');
 
 Route::get('/location', function(){
     return view('layout.location');
