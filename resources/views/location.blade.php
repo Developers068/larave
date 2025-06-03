@@ -1,6 +1,6 @@
 @extends('layout.app')
 
-@section('title', 'location')
+@section('title', 'Location')
 @section('content')
     <p>yaani tunapatika st john hapo maintanance  ukitukosa basi</p>
 @endsection
