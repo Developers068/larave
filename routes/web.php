@@ -27,7 +27,4 @@ Route::get('/Employees', function () {
     return view('employees');
 })->name('employees');
 
-Route::get('/location', function(){
-    return view('layout.location');
-})->name('ben');
-
+Route::get ('/location', [PageController::class, 'location'])->name('location');

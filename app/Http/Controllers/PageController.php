@@ -26,6 +26,11 @@ class PageController extends Controller
      return view('blog');
     }
 
+    public function location()
+        {
+            return view('location');
+        }
+
 
 
     /**

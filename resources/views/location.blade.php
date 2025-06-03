@@ -1,4 +1,6 @@
 @extends('layout.app')
+
+@section('title', 'location')
 @section('content')
     <div class="language-selector">
         <a id="lang-nyz" class="active" onclick="changeLanguage('nyz')">Kinyamwezi</a> | 
