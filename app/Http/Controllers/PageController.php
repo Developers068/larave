@@ -16,6 +16,11 @@ class PageController extends Controller
         return view('home');
     }
 
+     public function sjut()
+    {
+        return view('services');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

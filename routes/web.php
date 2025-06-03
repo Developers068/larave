@@ -14,7 +14,8 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get ('/', [PageController::class,'index'])->name('home');
+Route::get ('/', [PageController::class,'index'])->name('dash');
+Route::get ('/services', [PageController::class, 'sjut'])->name('services');
 
 
 Route::get('/About', function () {
@@ -23,5 +24,5 @@ Route::get('/About', function () {
 
 Route::get('/Employees', function () {
     return view('employees');
-})->name('happy');
+})->name('employees');
 
