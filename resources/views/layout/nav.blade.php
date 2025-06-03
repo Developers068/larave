@@ -15,6 +15,9 @@
         <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
         </li>
+                <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('contactus') ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>
+        </li>
       </ul>
     </div>
   </div>

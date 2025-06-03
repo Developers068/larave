@@ -15,7 +15,7 @@ use App\Http\Controllers\PageController;
 */
 
 Route::get ('/', [PageController::class,'index'])->name('home');
-
+Route::get ('/contactus', [PageController::class,'contactus'])->name('contactus');
 
 Route::get('/About', function () {
     return view('about');

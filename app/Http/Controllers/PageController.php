@@ -16,6 +16,10 @@ class PageController extends Controller
         return view('home');
     }
 
+    public function contactus()
+    {
+        return view('contactus');
+    }
     /**
      * Show the form for creating a new resource.
      *
