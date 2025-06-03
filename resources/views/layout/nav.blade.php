@@ -18,7 +18,8 @@
           <li class="nav-item">
 <!-- <<<<<<< HEAD -->
           <a class="nav-link {{ request()->routeIs('location') ? 'active' : '' }}" href="{{ route('location') }}">location</a>
-<!-- ======= -->
+<!-- ======= --></li>
+        <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a>
         </li>
         <li class="nav-item">
