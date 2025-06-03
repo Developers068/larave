@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title', 'Developers')</title>
     <link rel="stylesheet" href="{{ asset ('assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset ('assets/css/style2.css') }}">
   </head>
   <body>
     @include('layout.nav')

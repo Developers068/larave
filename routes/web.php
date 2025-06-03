@@ -26,3 +26,7 @@ Route::get('/Employees', function () {
     return view('employees');
 })->name('happy');
 
+Route::get('/location', function(){
+    return view('layout.location');
+})->name('ben');
+
