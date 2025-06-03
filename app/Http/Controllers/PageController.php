@@ -16,6 +16,12 @@ class PageController extends Controller
         return view('home');
     }
 
+
+    public function contactus()
+    {
+        return view('contactus');
+    }
+
      public function sjut()
     {
         return view('services');
