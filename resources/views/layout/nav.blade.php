@@ -15,19 +15,19 @@
         <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About Us</a>
         </li>
-                <li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('contactus') ? 'active' : '' }}" href="{{ route('contactus') }}">Contact Us</a>
-
-          <li class="nav-item">
-
+        <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('location') ? 'active' : '' }}" href="{{ route('location') }}">location</a>
         </li>
-        <li class="nav-link">
+        <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('services') ? 'active' : '' }}" href="{{ route('services') }}">Services</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>
-
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('gallery') ? 'active' : '' }}" href="{{ route('gallery') }}">GALLERY</a>
         </li>
       </ul>
     </div>

@@ -36,6 +36,11 @@ class PageController extends Controller
         {
             return view('location');
         }
+         public function gallery()
+    {
+     return view('gallery');
+    }
+
 
 
 

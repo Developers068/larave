@@ -19,6 +19,7 @@ Route::get ('/contactus', [PageController::class,'contactus'])->name('contactus'
 Route::get ('/', [PageController::class,'index'])->name('dash');
 Route::get ('/services', [PageController::class, 'sjut'])->name('services');
 Route::get ('/blog', [PageController::class, 'blog'])->name('blog');
+Route::get ('/gallery', [PageController::class, 'gallery'])->name('gallery');
 
 
 Route::get('/About', function () {
