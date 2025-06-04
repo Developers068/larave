@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +16,14 @@ use App\Http\Controllers\PageController;
 */
 
 
-// Route::get ('/', [PageController::class,'index'])->name('home');
+Route::get ('/', [PageController::class,'index'])->name('home');
 Route::get ('/contactus', [PageController::class,'contactus'])->name('contactus');
-Route::get ('/', [PageController::class,'index'])->name('dash');
 Route::get ('/services', [PageController::class, 'sjut'])->name('services');
 Route::get ('/blog', [PageController::class, 'blog'])->name('blog');
 Route::get ('/gallery', [PageController::class, 'gallery'])->name('gallery');
+Route::get('/products', [ProductController::class, 'index'])->name('products.index');
+Route::get('/create', [ProductController::class, 'create'])->name('products.create');
+Route::POST('/create', [ProductController::class, 'store'])->name('products.store');
 
 Route::get('/', function () {
     return view('home');
