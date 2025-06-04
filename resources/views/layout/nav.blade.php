@@ -7,7 +7,7 @@
     <div class="collapse navbar-collapse" id="navContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link {{ request()->routeIs('dash') ? 'active' : '' }}" href="{{ route('dash') }}">Home</a>
+          <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('employees') ? 'active' : '' }}" href="{{ route('employees') }}">Employees</a>
